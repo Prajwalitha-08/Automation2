@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-14T11:12:36 IST" name="Default suite" finished-at="2022-12-14T11:12:55 IST" duration-ms="19356">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@2b71e916]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-12-14T11:12:36 IST" name="Default test" finished-at="2022-12-14T11:12:55 IST" duration-ms="19356">
+      <class name="Cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@2b71e916]" started-at="2022-12-14T11:12:36 IST" name="setUpClass" finished-at="2022-12-14T11:12:36 IST" duration-ms="541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@590f0c50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@2b71e916]" started-at="2022-12-14T11:12:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T11:12:55 IST" duration-ms="18752" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Postivie Test for Submitting order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=108.0.1462.46)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'P0193518', ip: '10.140.1.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [21977389d39fac3b09593fa7be4eb1a0, findElement {using=xpath, value=//button[@type='button'][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 107.0.1418.23 (f7076ba83bc3..., userDataDir: C:\Users\BONGON~1.PRA\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21977389d39fac3b09593fa7be4eb1a0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=108.0.1462.46)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'P0193518', ip: '10.140.1.202', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [21977389d39fac3b09593fa7be4eb1a0, findElement {using=xpath, value=//button[@type='button'][1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:55340}, msedge: {msedgedriverVersion: 107.0.1418.23 (f7076ba83bc3..., userDataDir: C:\Users\BONGON~1.PRA\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55340/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 21977389d39fac3b09593fa7be4eb1a0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
+at PageObjects.CheckOut.shippingDetails(CheckOut.java:48)
+at Site.StepDefinition.stepDefinitionpage.placingorder(stepDefinitionpage.java:56)
+at ✽.Filling details and placing order(file:///C:/Users/bongoni.prajwalitha/eclipse-workspace/Automation2/src/cucumber/website.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@2b71e916]" started-at="2022-12-14T11:12:55 IST" name="tearDownClass" finished-at="2022-12-14T11:12:55 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
